@@ -1,0 +1,35 @@
+<%-include("header")-%>
+
+
+<body>
+    <div class="box" id="heading">
+        <h1><%=workOrHome%> </h1>
+    </div>
+    <div class="box">
+
+
+        <%for (var i=0; i<nis.length; i++) { %>
+
+        <div class="item">
+            <input type="checkbox">
+            <p><%=nis[i]%></p>
+
+        </div>
+        <% }%>
+
+
+
+        </ul>
+        <form action="/" class="item" method="post">
+            <input type="text" name="iteam" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="button" value=<%=workOrHome%>>+</button>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+<%-include("footer")-%>
